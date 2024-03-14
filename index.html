@@ -15,17 +15,74 @@
 
             
 
-            <div id="right" class="w-3/5"></div>
+            <div id="left" class="w-3/5 bg-contain bg-no-repeat bg-center mx-5" style="background-image: url(./undraw_people_re_8spw.svg);" >
+            
+
+                <div id="loading" class="text-5xl text-black hidden flex items-center justify-center min-h-screen">Loading...</div>
+
+
+               <div class="hidden items-center justify-center min-h-screen flex flex-col text-3xl text-left" id="values">
+                
+              <div>
+                  
+                <div class="flex gap-3 text-blue-600">Nationalize : 
+
+                    <div id="nationa" class="text-black"></div>
+
+                </div>
+
+                <div class="flex gap-3">Probability of name : 
+                    <div id="probability" ></div>
+                </div>
+
+               
+
+                <div class="flex gap-3 text-blue-600">Gender : 
+
+                    <div id="gende" class="text-black"></div>
+
+
+                </div>
+
+                <div class="flex gap-3">Probability of gender :
+                    <div id="probabilityOfGender"></div>
+                </div>
+
+                <div class="flex gap-3">Count of name :
+                    <div id="countOfGender"></div>
+                </div>
+
+                <div class="flex gap-3 text-blue-600">Age : 
+
+                    <div id="agee" class="text-black"></div>
+
+
+                </div>
+              </div>
+
+               </div>
+            
+            
+            </div>
 
 
 
-            <div id="left" class=" min-h-screen border-l gap-6 border-l-cyan-600 min-h-screen w-2/5 flex-col flex items-center justify-center">
+            <div id="right" class=" border-l min-h-screen gap-9 border-l-cyan-600 min-h-screen w-2/5 flex-col flex items-center pt-20">
+
+                <div id="text" class="text-6xl text-blue-600 pb-10 font-bold">Nominate</div>
 
                 <div id="icon" class="flex items-center justify-center text-blue-600"> <i class="fa-solid fa-users text-9xl"></i> </div>
 
-                <div id="input"> <input type="text" class="px-12 py-3 rounded-3xl text-sm pl-3" placeholder="Enter your name"> </div>
+                <div class="flex flex-col gap-4 items-center">
 
-                 <button class="px-8 py-3 bg-blue-600 text-sm text-white rounded-3xl cursor-pointer``">Generate</button> 
+                    <div id="inputt" class="flex px-12 py-3 rounded-3xl text-sm pl-3 outline-none items-center gap-5 bg-white divide-x divide-gray-600"> 
+                        <i class="fa-solid fa-user text-gray-600"></i> 
+                        <input type="text" placeholder="Enter your name" class="outline-none pl-4" id="input"> 
+                    </div>
+
+                 <button id="button" class="px-8 py-3 bg-blue-600 text-sm text-white rounded-3xl cursor-pointer hover:scale-110 transition active:scale-75">Generate</button> 
+
+                </div>
 
             </div>
 
@@ -37,6 +94,6 @@
 
 
 
-    <script src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
